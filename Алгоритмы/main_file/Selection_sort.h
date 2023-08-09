@@ -9,7 +9,7 @@ void selection_sort(T* A, size_t n){
         size_t min_pos;
         T min = A[j];
 
-        for(size_t i = j + 1; i < n; i++){
+        for(size_t i = j+1; i < n; i++){
             if(min > A[i]){
                 min = A[i];
                 min_pos = i;
