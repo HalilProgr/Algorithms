@@ -15,6 +15,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
+    Binary_search.h \
     Insertion_sort.h \
     Merge_sort.h \
     Selection_sort.h

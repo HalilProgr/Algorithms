@@ -4,10 +4,10 @@
 #include<typeinfo>
 
 template <class T>
-void insertion_sort(T* A, size_t n){
-    for(size_t j = 1; j < n; j++){
+void insertion_sort(T* A, std::size_t n){
+    for(std::size_t j = 1; j < n; j++){
         T key = A[j];
-        size_t i = j - 1;
+        std::size_t i = j - 1;
         while (i >= 0 && A[i] > key){
             A[i+1] = A[i];
             --i;
