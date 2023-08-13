@@ -36,6 +36,8 @@ int main(int argc, char *argv[])
         std::cout << temp << " finded in A" << std::endl;
     else
         std::cout << temp << " did not find in A" << std::endl;
+
+
     //merge(a.data(), 0, a.size()/2, a.size() );
     //merge_sort(a.data(), 0, a.size());
 
