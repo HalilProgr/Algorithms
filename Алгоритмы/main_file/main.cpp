@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
         std::cout << t << " ";
     }
     std::cout << std::endl;
-    // прпр
+
 /*
     for(auto & t : a){
         t = std::rand()%100;
