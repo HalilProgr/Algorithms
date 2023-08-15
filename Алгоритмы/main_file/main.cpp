@@ -2,8 +2,9 @@
 #include <iostream>
 
 //#include "Selection_sort.h"
-#include "Merge_sort.h"
-#include "Binary_search.h"
+//#include "Merge_sort.h"
+//#include "Binary_search.h"
+#include "Heap_sort.h"
 
 // NOTE: Думаю стоит даваить в данный проект интересный объект для оценки скорости работы алгоритмов
 // в зависимости от колличеста входных аргументов и построение графика результующее показатели алгоритма,
@@ -12,9 +13,17 @@
 
 int main(int argc, char *argv[])
 {
-    std::array<int, 13> a;
+    std::array<int, 10> a = {4, 1, 3, 2, 16, 9, 10, 14, 8, 7};
 
+    BuildMaxHeap(a.data(), a.size());
 
+    std:: cout << "A: ";
+    for(auto & t : a){
+        std::cout << t << " ";
+    }
+    std::cout << std::endl;
+    // прпр
+/*
     for(auto & t : a){
         t = std::rand()%100;
     }
@@ -30,23 +39,25 @@ int main(int argc, char *argv[])
     int temp = 101;
     std::size_t t = 1;
 
+
+
     std::cout << t-1 << std::endl;
 
     if(binary_search(a.data(), 0, a.size(), temp))
         std::cout << temp << " finded in A" << std::endl;
     else
         std::cout << temp << " did not find in A" << std::endl;
-    //merge(a.data(), 0, a.size()/2, a.size() );
-    //merge_sort(a.data(), 0, a.size());
+    // merge(a.data(), 0, a.size()/2, a.size() );
+    // merge_sort(a.data(), 0, a.size());
 
-    //selection_sort(a.data(), a.size());
+    // selection_sort(a.data(), a.size());
 
     //for(auto & t : a){
     //    std::cout << t << " ";
     //}
 
     //std::cout << std::endl;
-
+*/
 }
 
 

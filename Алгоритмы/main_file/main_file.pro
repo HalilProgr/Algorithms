@@ -16,6 +16,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 HEADERS += \
     Binary_search.h \
+    Heap_sort.h \
     Insertion_sort.h \
     Merge_sort.h \
     Selection_sort.h
