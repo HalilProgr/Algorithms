@@ -32,11 +32,21 @@ void MaxHeapify(T* A, std::size_t i, std::size_t heapSize){
  */
 template <class T>
 void BuildMaxHeap(T* A, std::size_t n){
-    for(std::size_t i = n/2; i > 0; --i) MaxHeapify(A, i, n);
+    for(std::size_t i = n/2; i > 0; i--) MaxHeapify(A, i, n);
     MaxHeapify(A, 0, n);
 }
 
+/*
+ * Рабочая сортировка, при изменении условия сортировки необходимо заменить функцию Heapify. время работы алгоритма О(n*lg(n))
+ */
+template <class T>
+void HeapSort(T* A, std::size_t n){
+    BuildMaxHeap(A, n);
 
-
+    for (std::size_t i = n - 1; i > 0; i--){
+        std::swap(A[0], A[i]);
+        MaxHeapify(A, 0, i);
+    }
+}
 
 #endif // HEAP_SORT_H

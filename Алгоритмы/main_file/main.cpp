@@ -15,7 +15,8 @@ int main(int argc, char *argv[])
 {
     std::array<int, 10> a = {4, 1, 3, 2, 16, 9, 10, 14, 8, 7};
 
-    BuildMaxHeap(a.data(), a.size());
+    ////BuildMaxHeap(a.data(), a.size());
+    HeapSort(a.data(), a.size());
 
     std:: cout << "A: ";
     for(auto & t : a){
