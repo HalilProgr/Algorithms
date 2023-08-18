@@ -19,13 +19,20 @@ int main(int argc, char *argv[])
 
     //HeapSort(a.data(), a.size());
 
-    QuickSort(a.data(), 0, a.size());
+    std:: cout << "A: ";
+    for(auto & t : a){
+        std::cout << t << " ";
+    }
+    std::cout << std::endl;
+
+    QuickSort(a.data(), 0, a.size() - 1); // Первый аргумент начало, второй последний аргумент.
 
     std:: cout << "A: ";
     for(auto & t : a){
         std::cout << t << " ";
     }
     std::cout << std::endl;
+
 
 /*
     for(auto & t : a){
@@ -62,6 +69,7 @@ int main(int argc, char *argv[])
 
     //std::cout << std::endl;
 */
+
 }
 
 
