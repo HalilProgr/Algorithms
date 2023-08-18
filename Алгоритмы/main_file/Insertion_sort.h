@@ -3,6 +3,8 @@
 
 #include<typeinfo>
 
+// Сортировка вставками
+
 template <class T>
 void insertion_sort(T* A, std::size_t n){
     for(std::size_t j = 1; j < n; j++){

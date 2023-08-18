@@ -4,7 +4,9 @@
 //#include "Selection_sort.h"
 //#include "Merge_sort.h"
 //#include "Binary_search.h"
-#include "Heap_sort.h"
+//#include "Heap_sort.h"
+
+#include "Quick_sort.h"
 
 // NOTE: Думаю стоит даваить в данный проект интересный объект для оценки скорости работы алгоритмов
 // в зависимости от колличеста входных аргументов и построение графика результующее показатели алгоритма,
@@ -13,10 +15,11 @@
 
 int main(int argc, char *argv[])
 {
-    std::array<int, 10> a = {4, 1, 3, 2, 16, 9, 10, 14, 8, 7};
+    std::array<int, 8> a = {2, 8, 7, 1, 3, 5, 6, 4};
 
-    ////BuildMaxHeap(a.data(), a.size());
-    HeapSort(a.data(), a.size());
+    //HeapSort(a.data(), a.size());
+
+    QuickSort(a.data(), 0, a.size());
 
     std:: cout << "A: ";
     for(auto & t : a){
