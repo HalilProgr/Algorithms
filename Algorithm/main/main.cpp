@@ -1,6 +1,9 @@
 #include <array>
 #include <iostream>
 
+#include <QApplication>
+#include <mainwindow.h>
+
 //#include "Selection_sort.h"
 //#include "Merge_sort.h"
 //#include "Binary_search.h"
@@ -15,24 +18,11 @@
 
 int main(int argc, char *argv[])
 {
-    std::array<int, 8> a = {2, 8, 7, 1, 3, 5, 6, 4};
+    QApplication app (argc, argv);
+    MainWindow x;
+    x.show();
 
-    //HeapSort(a.data(), a.size());
-
-    std:: cout << "A: ";
-    for(auto & t : a){
-        std::cout << t << " ";
-    }
-    std::cout << std::endl;
-
-    QuickSort(a.data(), 0, a.size() - 1); // Первый аргумент начало, второй последний аргумент.
-
-    std:: cout << "A: ";
-    for(auto & t : a){
-        std::cout << t << " ";
-    }
-    std::cout << std::endl;
-
+    return app.exec();
 
 /*
     for(auto & t : a){
