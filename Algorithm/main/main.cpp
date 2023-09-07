@@ -1,15 +1,18 @@
 #include <array>
 #include <iostream>
 
-#include <QApplication>
-#include <mainwindow.h>
+#include <vector>
+#include <utility>
+
+//#include <QApplication>
+//#include <mainwindow.h>
 
 //#include "Selection_sort.h"
 //#include "Merge_sort.h"
 //#include "Binary_search.h"
 //#include "Heap_sort.h"
 
-#include "Quick_sort.h"
+//#include "Quick_sort.h"
 
 // NOTE: Думаю стоит даваить в данный проект интересный объект для оценки скорости работы алгоритмов
 // в зависимости от колличеста входных аргументов и построение графика результующее показатели алгоритма,
@@ -31,18 +34,30 @@ public:
 };
 
 
-int main(int argc, char *argv[])
-{
 
-    int i = 1;
 
-    std::cout << i%3 << std::endl;
+int main(){
 
-    QApplication app (argc, argv);
-    MainWindow x;
-    x.show();
+    int N = 5;
 
-    return app.exec();
+
+    std::vector<std::pair<int, int>> lines = {{1,2},{2,3},{4,5},{4,5},{5,6}};
+
+    int n, minRline, minLline, count = 1;
+    //for (int i = 0; i < N; i++) std::cin >> lines[i].first >> lines[i].second;
+
+    minLline = lines[0].first;
+    minRline = lines[0].second;
+
+    for(int i = 1; i < lines.size(); i++){
+        if(minLline < lines[i].second && minRline < lines[i].first){
+            count++;
+            minLline = lines[i].first;
+            minRline = lines[i].second;
+        }
+    };
+}
+
 
 /*
     for(auto & t : a){
@@ -80,6 +95,6 @@ int main(int argc, char *argv[])
     //std::cout << std::endl;
 */
 
-}
+
 
 

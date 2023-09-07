@@ -20,7 +20,7 @@ HEADERS += \
     Merge_sort.h \
     Quick_sort.h \
     Selection_sort.h \
-    TaskExchange.h \
+    TaskYandex.h \
     TasksIvan.h \
     mainwindow.h \
     qcustomplot.h
