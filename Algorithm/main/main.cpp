@@ -16,8 +16,28 @@
 // для этого надо написать класс GUI с понятным интерфейсом (аргументом указаетль на функцию)
 
 
+class Solution {
+public:
+    int maximumWealth(std::vector<std::vector<int>>& accounts) {
+        int max = 0;
+        for(int i = 0; i < accounts.size(); i++){
+            int temp = 0;
+            for(int j = 0; j < accounts[i].size(); j++) temp+= accounts[i][j];
+            if (temp > max) max = temp;
+        }
+
+        return max;
+    }
+};
+
+
 int main(int argc, char *argv[])
 {
+
+    int i = 1;
+
+    std::cout << i%3 << std::endl;
+
     QApplication app (argc, argv);
     MainWindow x;
     x.show();
