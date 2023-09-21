@@ -7,7 +7,7 @@
 
 // включение h файлов с алгоритмами сортировки.
 
-#include "Quick_sort.h"
+#include "algorithm.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),

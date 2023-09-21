@@ -14,14 +14,9 @@ SOURCES += \
     qcustomplot.cpp
 
 HEADERS += \
-    Binary_search.h \
-    Heap_sort.h \
-    Insertion_sort.h \
-    Merge_sort.h \
-    Quick_sort.h \
-    Selection_sort.h \
     TaskYandex.h \
     TasksIvan.h \
+    algorithm.h \
     mainwindow.h \
     qcustomplot.h
 
